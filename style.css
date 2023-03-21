@@ -269,11 +269,13 @@ h3 {
 .visit-card .content h3 {
     color: #000;
     font-size: 1.4rem;
+    
 }
 
 .visit-card .content p {
     color: #000000;
     font-size: 14px;
+    margin-top: 1rem;
     margin-bottom: 16px;
 }
 
@@ -485,6 +487,15 @@ footer {
   transform: translate(-2px, 0) rotate(-45deg);
 }
 @media screen and (max-width: 1150px) {
+    .image-grid {
+		--num-cols: 2;
+		--row-height: 200px;
+	}
+  .image-grid>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
     .back-video {
         width: auto;
         height: 100%;
@@ -598,7 +609,9 @@ footer {
         border-radius: 1rem;
         box-shadow: none;
     }
-  
+    .hero-text {
+        margin-top: 1rem;
+    }
     .hero-section{
         flex-direction: column;
         padding: 0 1rem;
@@ -611,7 +624,9 @@ footer {
     .hero-section>.hero-text h1 {
         font-size: 4rem;
     }
-
+form{
+    margin-top: -3rem;
+}
     form h1 {
         font-size: 1.5rem;
     }
